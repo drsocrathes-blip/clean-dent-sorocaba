@@ -343,29 +343,32 @@ function Index() {
             </div>
             <div className="fundadores">
               <article className="dentista">
+                <div className="avatar">Foto</div>
+                <div>
+                  <h3>Dra. Tânia Medrano</h3>
+                  <p className="funcao">Fundadora</p>
+                  <p className="cro">CRO-SP 26179</p>
+                  <ul className="bio-lista">
+                    <li>Cirurgiã-dentista formada pela USP-Bauru (1982)</li>
+                    <li>Pós-graduada em Periodontia pela USP-Bauru</li>
+                    <li>Pós-graduada pela Faculdade São Leopoldo Mandic</li>
+                  </ul>
+                </div>
+              </article>
+              <article className="dentista">
                 <img className="avatar" src="img/avatar-dr-taka.webp" alt="Dr. Takayuki Oizumi" />
                 <div>
                   <h3>Dr. Takayuki Oizumi</h3>
                   <p className="funcao">Fundador e responsável técnico</p>
                   <p className="cro">CRO-SP 23827</p>
-                  <p className="bio">
-                    O Dr. Taka fundou a Clean Dent em 1998. Formado pela USP-Bauru, acompanha
-                    muitos pacientes desde a primeira consulta na clínica.
-                  </p>
-                </div>
-              </article>
-              <article className="dentista">
-                <div className="avatar">Foto</div>
-                <div>
-                  <h3>Dra. Tânia Medrano</h3>
-                  <p className="funcao">Fundadora</p>
-                  <p className="cro">
-                    CRO-SP <span className="pendente">a confirmar</span>
-                  </p>
-                  <p className="bio">
-                    Formada pela USP-Bauru, divide com o Dr. Taka o atendimento e a condução da
-                    clínica.
-                  </p>
+                  <ul className="bio-lista">
+                    <li>Cirurgião-dentista formado pela USP-Bauru (1981)</li>
+                    <li>
+                      Especialista em Ortopedia Funcional dos Maxilares e Ortodontia (SPO, Sociedade
+                      Paulista de Ortodontia)
+                    </li>
+                    <li>Pós-graduado em Prótese pela USP-Bauru</li>
+                  </ul>
                 </div>
               </article>
             </div>

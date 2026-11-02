@@ -123,6 +123,7 @@ img.avatar{object-position:50% 22%}
 .dentista .funcao{font-size:15px;font-weight:600;color:var(--magenta);margin-top:6px}
 .dentista .cro{font-size:14px;color:var(--cinza)}
 .dentista .bio{color:#3a4441;font-size:16px;margin-top:14px}
+.dentista .bio-lista{list-style:none;margin:14px 0 0;padding:0;color:#3a4441;font-size:16px;display:flex;flex-direction:column;gap:6px}
 .pendente{background:#FFF1C9;color:#5d4600;padding:0 5px}
 @media (max-width:900px){.fundadores{grid-template-columns:1fr;gap:44px}.corpo{grid-template-columns:1fr 1fr;gap:40px 28px}}
 @media (max-width:560px){.corpo{grid-template-columns:1fr}.avatar{width:88px;height:88px}}
