@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
+import { Rotulo, Simbolo } from "@/components/Simbolo";
 
 const TITULO = "Clean Dent Odontologia";
 const DESCRICAO =
@@ -29,6 +30,7 @@ const MENU = [
   { id: "humanodontia", rotulo: "Humanodontia" },
   { id: "clinica", rotulo: "A clínica" },
   { id: "tratamentos", rotulo: "Tratamentos" },
+  { id: "tecnologia", rotulo: "Tecnologia" },
   { id: "equipe", rotulo: "Equipe" },
   { id: "estrutura", rotulo: "Estrutura" },
   { id: "contato", rotulo: "Contato" },
@@ -152,13 +154,15 @@ function Index() {
       <main id="inicio">
         <section className="hero">
           <div className="wrap">
+            <Simbolo className="hero-simbolo" size={44} />
             <span className="rotulo">Clínica odontológica em Sorocaba · desde 1998</span>
             <h1>
               Aqui você é atendido como <em>pessoa</em>, não só como um paciente.
             </h1>
             <p className="lead">
-              Atendimento próximo, explicações claras e tratamentos pensados para durar. É assim
-              que a Clean Dent cuida de famílias de Sorocaba há mais de 25 anos.
+              Tecnologia avançada, atendimento próximo e explicações claras, com tratamentos
+              pensados para durar. É assim que a Clean Dent cuida de famílias de Sorocaba há mais
+              de 25 anos.
             </p>
             <div className="acoes">
               <a className="btn btn-primario" href={WA} {...NOVA_ABA}>
@@ -193,13 +197,28 @@ function Index() {
         </div>
 
         <section className="secao humano" id="humanodontia">
+            <Simbolo variante="branco" className="marca-dagua" />
           <div className="wrap">
-            <span className="rotulo">Humanodontia</span>
+            <Rotulo variante="branco">Humanodontia</Rotulo>
             <h2>
               Cuidar da saúde bucal com a mesma atenção que se dá a uma <em>pessoa</em>, não só a
               um dente.
             </h2>
             <div className="pilares">
+              <div className="pilar">
+                <h3>Experiência</h3>
+                <p>
+                  Fundadores formados pela USP-Bauru, com pós-graduação e mais de 25 anos de
+                  clínica em Sorocaba.
+                </p>
+              </div>
+              <div className="pilar">
+                <h3>Tecnologia</h3>
+                <p>
+                  Aparelhos modernos de diagnóstico e tratamento, para mais precisão e conforto em
+                  cada etapa.
+                </p>
+              </div>
               <div className="pilar">
                 <h3>Acolhimento</h3>
                 <p>
@@ -210,12 +229,6 @@ function Index() {
               <div className="pilar">
                 <h3>Cuidado que dura</h3>
                 <p>Procedimentos práticos e eficazes, sem manutenções desnecessárias.</p>
-              </div>
-              <div className="pilar">
-                <h3>Experiência</h3>
-                <p>
-                  Fundadores formados pela USP-Bauru, com mais de 25 anos de clínica em Sorocaba.
-                </p>
               </div>
             </div>
           </div>
@@ -241,7 +254,7 @@ function Index() {
               </figcaption>
             </figure>
             <div className="texto">
-              <span className="rotulo">A clínica</span>
+              <Rotulo>A clínica</Rotulo>
               <h2>Uma clínica que conhece cada paciente pelo nome.</h2>
               <p>
                 A Clean Dent nasceu em 1998 da ideia que hoje a gente chama de{" "}
@@ -259,7 +272,7 @@ function Index() {
         <section className="secao tratamentos" id="tratamentos">
           <div className="wrap">
             <div className="cabeca">
-              <span className="rotulo">Tratamentos</span>
+              <Rotulo>Tratamentos</Rotulo>
               <h2>O que a gente faz.</h2>
               <p>
                 Todo tratamento começa com uma avaliação presencial, para indicar o que faz
@@ -299,6 +312,22 @@ function Index() {
                 </p>
               </article>
             </div>
+            <div className="outros">
+              <Rotulo as="h3">Outros serviços</Rotulo>
+              <div className="lista-trat lista-outros">
+                {[
+                  ["Odontologia do estilo de vida", "Saúde bucal ligada à rotina", "Olha para a boca junto com os hábitos do dia a dia, como alimentação, sono e estresse, para prevenir problemas e manter os resultados."],
+                  ["Laudos odontológicos", "Documentos técnicos", "Laudos e pareceres sobre a saúde bucal do paciente, para fins clínicos, trabalhistas, de seguro ou judiciais."],
+                  ["Canabidiol na odontologia", "Prescrição com acompanhamento", "Avaliação e prescrição de canabidiol quando houver indicação clínica, com acompanhamento do dentista e conforme as normas da Anvisa."],
+                ].map(([t, l, p]) => (
+                  <article className="trat" key={t}>
+                    <h3>{t}</h3>
+                    <span className="simples">{l}</span>
+                    <p>{p}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
             <p className="trat-nota">
               Dúvida sobre qual é o seu caso?{" "}
               <a className="link" href={WA_DUVIDA} {...NOVA_ABA}>
@@ -308,10 +337,36 @@ function Index() {
           </div>
         </section>
 
+        <section className="secao tecnologia" id="tecnologia">
+          <div className="wrap">
+            <div className="cabeca">
+              <Rotulo>Tecnologia</Rotulo>
+              <h2>Equipamentos modernos a serviço do seu tratamento.</h2>
+              <p>
+                Diagnósticos mais precisos, procedimentos mais confortáveis e resultados mais
+                previsíveis. Conheça os aparelhos que usamos no dia a dia da clínica.
+              </p>
+            </div>
+            <div className="aparelhos">
+              {[0, 1, 2, 3].map((i) => (
+                <article className="aparelho" key={i}>
+                  <div className="aparelho-foto">Foto do aparelho</div>
+                  <h3>
+                    <span className="pendente">Nome do aparelho</span>
+                  </h3>
+                  <p>
+                    <span className="pendente">Para que serve, em uma frase</span>
+                  </p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section className="secao jornada">
           <div className="wrap">
             <div className="cabeca">
-              <span className="rotulo">Como funciona</span>
+              <Rotulo>Como funciona</Rotulo>
               <h2>Do primeiro contato ao acompanhamento.</h2>
             </div>
             <ol className="passos">
@@ -338,7 +393,7 @@ function Index() {
         <section className="secao equipe" id="equipe">
           <div className="wrap">
             <div className="cabeca">
-              <span className="rotulo">Equipe</span>
+              <Rotulo>Equipe</Rotulo>
               <h2>Quem cuida de você.</h2>
             </div>
             <div className="fundadores">
@@ -396,7 +451,7 @@ function Index() {
         <section className="secao estrutura" id="estrutura">
           <div className="wrap">
             <div className="cabeca">
-              <span className="rotulo">Estrutura</span>
+              <Rotulo>Estrutura</Rotulo>
               <h2>Um espaço tranquilo, pensado para o seu conforto.</h2>
               <p>Recepção ampla, consultórios bem iluminados e área de esterilização própria.</p>
             </div>
@@ -414,7 +469,7 @@ function Index() {
         <section className="secao contato" id="contato">
           <div className="wrap">
             <div className="cabeca">
-              <span className="rotulo">Contato</span>
+              <Rotulo>Contato</Rotulo>
               <h2>Venha nos visitar.</h2>
               <p>
                 O agendamento é feito pelo WhatsApp. A gente responde e combina o melhor horário
