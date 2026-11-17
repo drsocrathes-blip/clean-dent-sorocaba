@@ -89,8 +89,6 @@ section{scroll-margin-top:84px}
 .sobre .wrap{display:grid;grid-template-columns:5fr 6fr;gap:clamp(40px,7vw,96px);align-items:center}
 .sobre figure{margin:0}
 .sobre img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 18%}
-.dupla{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.foto-vaga{aspect-ratio:4/5;background:var(--areia);display:grid;place-items:center;text-align:center;font-size:14px;font-weight:600;color:var(--cinza);line-height:1.4;padding:12px}
 .sobre figcaption{font-size:14px;color:var(--cinza);margin-top:14px}
 .sobre .texto{display:flex;flex-direction:column;gap:18px;min-width:0}
 .sobre .texto h2{font-size:clamp(32px,4vw,46px);margin-bottom:6px}
@@ -119,6 +117,7 @@ section{scroll-margin-top:84px}
 .dentista{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:start;min-width:0}
 .avatar{width:112px;height:112px;border-radius:50%;object-fit:cover;background:var(--areia);display:grid;place-items:center;font:600 12px var(--f-texto);letter-spacing:.12em;text-transform:uppercase;color:var(--cinza);flex:none}
 img.avatar{object-position:50% 22%}
+.avatar-iniciais{font-family:var(--f-titulo);font-size:34px;font-weight:400;letter-spacing:0;text-transform:none;color:var(--turquesa-prof)}
 .corpo .avatar{width:88px;height:88px}
 .dentista h3{font-size:26px}
 .corpo .dentista h3{font-size:22px}
@@ -126,7 +125,6 @@ img.avatar{object-position:50% 22%}
 .dentista .cro{font-size:14px;color:var(--cinza)}
 .dentista .bio{color:#3a4441;font-size:16px;margin-top:14px}
 .dentista .bio-lista{list-style:none;margin:14px 0 0;padding:0;color:#3a4441;font-size:16px;display:flex;flex-direction:column;gap:6px}
-.pendente{background:#FFF1C9;color:#5d4600;padding:0 5px}
 @media (max-width:900px){.fundadores{grid-template-columns:1fr;gap:44px}.corpo{grid-template-columns:1fr 1fr;gap:40px 28px}}
 @media (max-width:560px){.corpo{grid-template-columns:1fr}.avatar{width:88px;height:88px}}
 .estrutura{border-top:1px solid var(--areia)}
@@ -178,10 +176,3 @@ img.avatar{object-position:50% 22%}
 @media (max-width:760px){.lista-outros{grid-template-columns:1fr}}
 /* ===== Tecnologia ===== */
 .tecnologia{border-top:1px solid var(--areia)}
-.aparelhos{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;margin-top:64px}
-.aparelho{min-width:0;display:flex;flex-direction:column;gap:8px}
-.aparelho-foto{aspect-ratio:4/3;background:var(--areia);display:grid;place-items:center;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--cinza);margin-bottom:10px;text-align:center}
-.aparelho h3{font-size:22px}
-.aparelho p{font-size:15px;color:var(--cinza)}
-@media (max-width:960px){.aparelhos{grid-template-columns:1fr 1fr}}
-@media (max-width:540px){.aparelhos{grid-template-columns:1fr}}

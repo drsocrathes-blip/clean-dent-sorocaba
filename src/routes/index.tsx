@@ -261,20 +261,12 @@ function Index() {
         <section className="secao sobre" id="clinica">
           <div className="wrap">
             <figure>
-              <div className="dupla">
-                <img
-                  src="img/dr-taka-retrato.webp"
-                  alt="Dr. Takayuki Oizumi, sorrindo, de terno escuro"
-                />
-                <div className="foto-vaga">
-                  <span>
-                    Foto da Dra. Tânia
-                    <br />e Dr. Taka
-                  </span>
-                </div>
-              </div>
+              <img
+                src="img/dr-taka-retrato.webp"
+                alt="Dr. Takayuki Oizumi, sorrindo, de terno escuro"
+              />
               <figcaption>
-                Dr. Takayuki Oizumi e Dra. Tânia Medrano, fundadores da Clean Dent.
+                Dr. Takayuki Oizumi, fundador e responsável técnico da Clean Dent.
               </figcaption>
             </figure>
             <div className="texto">
@@ -367,22 +359,9 @@ function Index() {
               <Rotulo>Tecnologia</Rotulo>
               <h2>Equipamentos modernos a serviço do seu tratamento.</h2>
               <p>
-                Diagnósticos mais precisos, procedimentos mais confortáveis e resultados mais
-                previsíveis. Conheça os aparelhos que usamos no dia a dia da clínica.
+                Equipamentos modernos de diagnóstico e tratamento, para mais precisão e conforto
+                em cada etapa.
               </p>
-            </div>
-            <div className="aparelhos">
-              {[0, 1, 2, 3].map((i) => (
-                <article className="aparelho" key={i}>
-                  <div className="aparelho-foto">Foto do aparelho</div>
-                  <h3>
-                    <span className="pendente">Nome do aparelho</span>
-                  </h3>
-                  <p>
-                    <span className="pendente">Para que serve, em uma frase</span>
-                  </p>
-                </article>
-              ))}
             </div>
           </div>
         </section>
@@ -422,7 +401,7 @@ function Index() {
             </div>
             <div className="fundadores">
               <article className="dentista">
-                <div className="avatar">Foto</div>
+                <div className="avatar avatar-iniciais" aria-hidden="true">TM</div>
                 <div>
                   <h3>Dra. Tânia Medrano</h3>
                   <p className="funcao">Fundadora</p>
