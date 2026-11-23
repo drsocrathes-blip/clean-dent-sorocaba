@@ -260,14 +260,17 @@ function Index() {
 
         <section className="secao sobre" id="clinica">
           <div className="wrap">
-            <figure>
-              <img
-                src="img/dr-taka-retrato.webp"
-                alt="Dr. Takayuki Oizumi, sorrindo, de terno escuro"
-              />
-              <figcaption>
-                Dr. Takayuki Oizumi, fundador e responsável técnico da Clean Dent.
-              </figcaption>
+            <figure className="retratos">
+              <div className="retrato">
+                <img src="img/dra-tania-retrato.jpg" alt="Dra. Tânia Medrano" />
+                <figcaption>Dra. Tânia Medrano, fundadora da Clean Dent.</figcaption>
+              </div>
+              <div className="retrato">
+                <img src="img/dr-taka-retrato.webp" alt="Dr. Takayuki Oizumi" />
+                <figcaption>
+                  Dr. Takayuki Oizumi, fundador e responsável técnico da Clean Dent.
+                </figcaption>
+              </div>
             </figure>
             <div className="texto">
               <Rotulo>A clínica</Rotulo>

@@ -88,12 +88,15 @@ section{scroll-margin-top:84px}
 @media (max-width:560px){.pilares{grid-template-columns:1fr;gap:36px;margin-top:52px}}
 .sobre .wrap{display:grid;grid-template-columns:5fr 6fr;gap:clamp(40px,7vw,96px);align-items:center}
 .sobre figure{margin:0}
+.sobre .retratos{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start}
+.sobre .retrato{min-width:0}
 .sobre img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 18%}
 .sobre figcaption{font-size:14px;color:var(--cinza);margin-top:14px}
 .sobre .texto{display:flex;flex-direction:column;gap:18px;min-width:0}
 .sobre .texto h2{font-size:clamp(32px,4vw,46px);margin-bottom:6px}
 .sobre .texto p{color:#3a4441}
-@media (max-width:820px){.sobre .wrap{grid-template-columns:1fr}.sobre figure{max-width:420px}}
+@media (max-width:820px){.sobre .wrap{grid-template-columns:1fr}.sobre figure{max-width:520px}}
+@media (max-width:560px){.sobre .retratos{grid-template-columns:1fr}.sobre figure{max-width:360px}}
 .tratamentos{border-top:1px solid var(--areia)}
 .lista-trat{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;margin-top:64px}
 .trat{border-top:2px solid var(--turquesa);padding-top:26px;display:flex;flex-direction:column;gap:10px;min-width:0}
