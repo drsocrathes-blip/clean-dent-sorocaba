@@ -401,7 +401,7 @@ function Index() {
             </div>
             <div className="fundadores">
               <article className="dentista">
-                <div className="avatar avatar-iniciais" aria-hidden="true">TM</div>
+                <img className="avatar" src="img/avatar-dra-tania.jpg" alt="Dra. Tânia Medrano" />
                 <div>
                   <h3>Dra. Tânia Medrano</h3>
                   <p className="funcao">Fundadora</p>

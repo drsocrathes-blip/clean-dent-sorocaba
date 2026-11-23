@@ -117,7 +117,6 @@ section{scroll-margin-top:84px}
 .dentista{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:start;min-width:0}
 .avatar{width:112px;height:112px;border-radius:50%;object-fit:cover;background:var(--areia);display:grid;place-items:center;font:600 12px var(--f-texto);letter-spacing:.12em;text-transform:uppercase;color:var(--cinza);flex:none}
 img.avatar{object-position:50% 22%}
-.avatar-iniciais{font-family:var(--f-titulo);font-size:34px;font-weight:400;letter-spacing:0;text-transform:none;color:var(--turquesa-prof)}
 .corpo .avatar{width:88px;height:88px}
 .dentista h3{font-size:26px}
 .corpo .dentista h3{font-size:22px}
